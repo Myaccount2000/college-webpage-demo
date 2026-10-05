@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173d35" />
+    <meta
+      name="description"
+      content="Find your people, your purpose, and your next big idea at Northfield University."
+    />
+    <title>Northfield University | Find Your North</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+      <p>
+        <span class="announcement-dot" aria-hidden="true"></span> Applications
+        for Fall 2026 are now open
+      </p>
+      <a href="#visit">Plan your visit <span aria-hidden="true">↗</span></a>
+    </div>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Northfield University home">
+        <span class="wordmark-seal" aria-hidden="true">N</span>
+        <span class="wordmark-text">NORTHFIELD<span>UNIVERSITY</span></span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#academics">Academics</a><a href="#life">Campus life</a
+        ><a href="#stories">Stories</a><a href="#visit">Visit</a>
+        <a class="nav-apply" href="#inquire"
+          >Request information <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Students walking across a tree-lined university campus"
+        ></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">
+            <span></span> A university for what comes next
+          </p>
+          <h1 id="hero-title">Find your<br /><em>true north.</em></h1>
+          <p class="hero-intro">
+            The questions you can’t stop asking? Start there. At Northfield,
+            you’ll find the people, perspective, and room to follow them.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#academics"
+              >Explore Northfield <span aria-hidden="true">↗</span></a
+            ><a class="text-link text-link-light" href="#visit"
+              >Come see for yourself <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span>Northfield, Massachusetts</span
+          ><span>42° 20' N &nbsp; 71° 06' W</span>
+        </div>
+        <a
+          class="hero-scroll"
+          href="#at-a-glance"
+          aria-label="Scroll to university highlights"
+          ><span></span> Scroll to explore</a
+        >
+      </section>
+      <section
+        class="at-a-glance"
+        id="at-a-glance"
+        aria-label="Northfield at a glance"
+      >
+        <div class="glance-label">A place to begin</div>
+        <div class="glance-stat">
+          <strong>4,800</strong><span>curious minds</span>
+        </div>
+        <div class="glance-stat">
+          <strong>12:1</strong><span>student-to-faculty ratio</span>
+        </div>
+        <div class="glance-stat">
+          <strong>80+</strong><span>ways to make it yours</span>
+        </div>
+        <a
+          class="glance-link"
+          href="#academics"
+          aria-label="Discover Northfield academics"
+          >Get to know us <span aria-hidden="true">↗</span></a
+        >
+      </section>
+      <section
+        class="section academics"
+        id="academics"
+        aria-labelledby="academics-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Make room for wonder</p>
+            <h2 id="academics-title">Follow the<br /><em>interesting.</em></h2>
+          </div>
+          <div class="section-aside">
+            <p>
+              Here, learning doesn’t stay inside the lines. Mix disciplines,
+              work alongside faculty, and turn what fascinates you into work
+              that matters.
+            </p>
+            <a class="text-link" href="#inquire"
+              >See all programs <span aria-hidden="true">→</span></a
+            >
+          </div>
+        </div>
+        <div class="program-controls" role="group" aria-label="Filter programs">
+          <button
+            class="filter-button is-active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All programs
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="arts"
+            aria-pressed="false"
+          >
+            Arts &amp; humanities
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="science"
+            aria-pressed="false"
+          >
+            Science &amp; technology
+          </button>
+          <button
+            class="filter-button"
+            type="button"
+            data-filter="society"
+            aria-pressed="false"
+          >
+            People &amp; society
+          </button>
+        </div>
+        <div class="program-grid" aria-live="polite">
+          <a
+            class="program-card program-card-featured"
+            href="#inquire"
+            data-category="science"
+            ><span class="program-index">01 / FIELD NOTES</span
+            ><span class="program-name">Environmental<br />Studies</span
+            ><span class="program-meta"
+              >SCIENCE &amp; TECHNOLOGY <span aria-hidden="true">↗</span></span
+            ></a
+          >
+          <a
+            class="program-card program-card-art"
+            href="#inquire"
+            data-category="arts"
+            ><span class="program-index">02 / MAKE SOMETHING</span
+            ><span class="program-name">Studio<br />Art</span
+            ><span class="program-meta"
+              >ARTS &amp; HUMANITIES <span aria-hidden="true">↗</span></span
+            ></a
+          >
+          <a
+            class="program-card program-card-people"
+            href="#inquire"
+            data-category="society"
+            ><span class="program-index">03 / SEE THE SYSTEM</span
+            ><span class="program-name">Public<br />Policy</span
+            ><span class="program-meta"
+              >PEOPLE &amp; SOCIETY <span aria-hidden="true">↗</span></span
+            ></a
+          >
+          <a
+            class="program-card program-card-tech"
+            href="#inquire"
+            data-category="science"
+            ><span class="program-index">04 / THINK IN CODE</span
+            ><span class="program-name">Computer<br />Science</span
+            ><span class="program-meta"
+              >SCIENCE &amp; TECHNOLOGY <span aria-hidden="true">↗</span></span
+            ></a
+          >
+        </div>
+      </section>
+      <section class="campus-feature" id="life" aria-labelledby="campus-title">
+        <div
+          class="campus-photo"
+          role="img"
+          aria-label="A bright, welcoming campus common room"
+        ></div>
+        <div class="campus-copy">
+          <p class="eyebrow eyebrow-light">
+            <span></span> More than a place to learn
+          </p>
+          <h2 id="campus-title">Your kind<br />of <em>community.</em></h2>
+          <p>
+            Late-night studio sessions. A seat saved at the dining hall. Friends
+            who become the people you call first. This is where you find your
+            people, and a hundred little ways to belong.
+          </p>
+          <a class="button button-outline-light" href="#visit"
+            >Get a feel for campus <span aria-hidden="true">↗</span></a
+          ><span class="campus-note"
+            >A little room to be yourself. A lot of room to grow.</span
+          >
+        </div>
+      </section>
+      <section
+        class="section stories"
+        id="stories"
+        aria-labelledby="stories-title"
+      >
+        <div class="stories-heading">
+          <div>
+            <p class="eyebrow"><span></span> The Northfield effect</p>
+            <h2 id="stories-title">Curiosity, <em>in motion.</em></h2>
+          </div>
+          <a class="text-link" href="#inquire"
+            >More Northfield stories <span aria-hidden="true">→</span></a
+          >
+        </div>
+        <div class="story-grid">
+          <article class="story story-large">
+            <a
+              class="story-image story-image-field"
+              href="#inquire"
+              aria-label="Read about students restoring a local watershed"
+              ><span class="image-tag">ON THE GROUND</span></a
+            >
+            <p class="story-category">SCIENCE · COMMUNITY</p>
+            <h3><a href="#inquire">A watershed moment, led by students</a></h3>
+            <p class="story-summary">
+              The best classroom in the region might just be the river running
+              through it.
+            </p>
+          </article>
+          <article class="story">
+            <a
+              class="story-image story-image-stage"
+              href="#inquire"
+              aria-label="Read about the student theatre collective"
+              ><span class="image-tag">AFTER HOURS</span></a
+            >
+            <p class="story-category">ARTS · CAMPUS LIFE</p>
+            <h3>
+              <a href="#inquire">The little theatre group making a big scene</a>
+            </h3>
+            <p class="story-summary">
+              A student-run stage, an original script, and a cast that found its
+              voice.
+            </p>
+          </article>
+          <article class="story story-quote">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>
+              “I came in with one big question. I left with a community full of
+              people asking it with me.”
+            </blockquote>
+            <p class="quote-attribution">
+              MAYA R. '26 <span>Environmental Studies</span>
+            </p>
+            <a class="text-link text-link-light" href="#inquire"
+              >Meet the Northfield community
+              <span aria-hidden="true">→</span></a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="visit-band" id="visit" aria-labelledby="visit-title">
+        <div class="visit-copy">
+          <p class="eyebrow eyebrow-light">
+            <span></span> It feels different in person
+          </p>
+          <h2 id="visit-title">Come find<br />your <em>place.</em></h2>
+        </div>
+        <div class="visit-details">
+          <p>
+            Take the long way across the quad. Ask the questions on your mind.
+            Get a glimpse of a day that could be yours.
+          </p>
+          <a class="button button-light" href="#inquire"
+            >Plan a campus visit <span aria-hidden="true">↗</span></a
+          ><span>Weekday and select Saturday visits available</span>
+        </div>
+        <div class="visit-mark" aria-hidden="true">N<span>°</span></div>
+      </section>
+      <section
+        class="inquire section"
+        id="inquire"
+        aria-labelledby="inquire-title"
+      >
+        <div class="inquire-copy">
+          <p class="eyebrow"><span></span> Your next chapter starts here</p>
+          <h2 id="inquire-title">Let’s keep<br /><em>in touch.</em></h2>
+          <p>
+            Get the details, dates, and little bits of Northfield that help you
+            picture what’s possible.
+          </p>
+        </div>
+        <form class="inquire-form" id="inquiry-form">
+          <label for="student-name">Your name</label
+          ><input
+            id="student-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="First and last name"
+            required
+          />
+          <label for="student-email">Email address</label
+          ><input
+            id="student-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+          />
+          <button class="button button-dark" type="submit">
+            Send me Northfield <span aria-hidden="true">→</span>
+          </button>
+          <p class="form-note" id="form-message" aria-live="polite">
+            This demo form shows a confirmation here; it does not send or store
+            your information.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a
+        class="wordmark footer-wordmark"
+        href="#top"
+        aria-label="Northfield University home"
+        ><span class="wordmark-seal" aria-hidden="true">N</span
+        ><span class="wordmark-text">NORTHFIELD<span>UNIVERSITY</span></span></a
+      >
+      <p>Curiosity has a home here.</p>
+      <div class="footer-bottom">
+        <span>© 2026 Northfield University</span
+        ><span>Northfield, Massachusetts</span><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
